@@ -1,0 +1,213 @@
+:root {
+    --red-color-1: #f65a55;
+    --red-color-2: #d9120c;
+    --red-color-3: #a90e09;
+    --red-color: var(--red-color-2);
+    --font-size-small: 12px;
+    --font-size-small-1: 10px;
+    --font-size-small-2: 12px;
+    --font-size-small-3: 13px;
+    --font-size-normal: 16px;
+    --font-size-normal-1: 14px;
+    --font-size-normal-2: 16px;
+    --font-size-normal-3: 18px;
+    --font-size-medium: 24px;
+    --font-size-medium-1: 22px;
+    --font-size-medium-2: 24px;
+    --font-size-medium-3: 28px;
+    --font-size-large: 36px;
+    --font-size-large-1: 32px;
+    --font-size-large-2: 36px;
+    --font-size-large-3: 42px;
+}
+
+span,
+p,
+h1,
+h2 {
+    transition: 0.2s ease-in-out all;
+}
+
+.tran {
+    transition: 0.2s ease-in-out all;
+}
+.nhl__bar {
+    height: 2px;
+    width: 0;
+}
+.nh__link:hover .nhl__bar {
+    width: 100%;
+}
+.nh__link:hover span {
+    color: black;
+}
+#tn__search__bar.active {
+    transform: scaleX(1);
+    opacity: 1;
+}
+#tn__search__bar {
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+}
+.bg-red {
+    background-color: var(--red-color) !important;
+}
+.bg-red1 {
+    background-color: var(--red-color-1) !important;
+}
+.bg-red2 {
+    background-color: var(--red-color-2) !important;
+}
+.bg-red3 {
+    background-color: var(--red-color-3) !important;
+}
+
+.text-red {
+    color: var(--red-color) !important;
+}
+.hover\:bg-red:hover {
+    background-color: var(--red-color) !important;
+}
+.hover\:text-red:hover {
+    color: var(--red-color) !important;
+}
+
+body {
+    font-size: var(--font-size-small);
+}
+.text-small {
+    font-size: var(--font-size-small);
+}
+.text-normal {
+    font-size: var(--font-size-normal);
+}
+.text-medium {
+    font-size: var(--font-size-medium);
+}
+.text-large {
+    font-size: var(--font-size-large);
+}
+
+body {
+    font-size: var(--font-size-normal);
+}
+.social__link {
+    transform: translate3d(120px, 0, 0);
+    width: 170px;
+    transition: 1s ease all;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+.social__link div {
+    width: 32px;
+    transition: 1s ease all;
+    height: 32px;
+}
+.social__link svg {
+    width: 20px;
+    height: 20px;
+}
+.social__link span {
+    width: 140px;
+}
+.social__link:hover {
+    transform: translate3d(0, 0, 0);
+}
+.social__link:hover div {
+    transform: rotate(360deg);
+}
+.bg-fb {
+    background-color: #3b5998;
+}
+.bg-twitter {
+    background: #55acee;
+}
+.bg-linkedin {
+    background: #007bb5;
+}
+.bg-youtube {
+    background: #b00;
+}
+.bg-insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+#chat__now__button {
+    background-color: var(--red-color);
+    transition: 0.3s ease all;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+#chat__now__button:hover {
+    background-color: var(--red-color-3);
+}
+#chat__now__button span {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 16px;
+    transform: rotate(180deg);
+}
+
+#chat__now {
+    min-width: 400px;
+    min-height: 60vh;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    transform: translateX(110%);
+    opacity: 0;
+    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1) all;
+}
+
+#chat__now.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#hero {
+    background-image: url("/images/hero.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.best-shadow {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+
+#choose__topics__wrapper a:hover {
+    font-weight: bold !important;
+}
+#choose__topics__wrapper.active {
+    opacity: 1;
+    transition:  0.6s cubic-bezier(0.25, 1, 0.5, 1) all;
+    transform: translate3d(0, 0, 0);
+}
+#choose__topics__wrapper {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+}
+
+.flex-100 {
+    flex: 0 0 100%;
+}
+.bg-l-gray {
+    background-color: #e9e7e7;
+}
+#v1 {
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1) all;
+    height: 400px;
+}
+#v1__pp {
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1) all;
+}
+.services__image:hover img{
+    transform: scale(1.1);
+}
+.services__image img{
+    transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1) all;
+}
+#login__links__wrapper{
+    transition:  0.6s cubic-bezier(0.25, 1, 0.5, 1) all;
+    transform: translate3d(100%,0,0) ;
+    opacity: 0;
+}
+#login__links__wrapper.active{
+    transform: translate3d(0,0,0) ;
+    opacity: 1;
+}

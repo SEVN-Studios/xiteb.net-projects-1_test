@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" href="#">
+    <title>ABC Bank</title>
+</head>
+
+<body class=" ">
+    <div class="w-full h-screen text-center flex lg:hidden items-center justify-center">
+        <p class="text-medium text-red mx-auto ">
+            Go And Find Another Page !!
+        </p>
+    </div>
+    <div class="lg:flex hidden flex-col">
+        <header id="header" class=" fixed z-40 bg-white top-0 max-h-36 flex items-center flex-col w-full h-max">
+            <div class="flex justify-between w-full  relative">
+                <div id="tn__search__bar"
+                    class=" absolute bg-white transform scale-0 overflow-hidden w-full h-full px-8 py-4 z-50 flex items-center justify-between space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="fill-current text-black text-opacity-40 w-8 h-8 ">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                    <form action="" class="w-full"><input type="text" class="w-full h-full outline-none "
+                            placeholder="Search">
+                    </form>
+                    <button id="tn__search__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="fill-current text-black text-opacity-40 w-8 h-8 hover:text-black tran">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex space-x-8 flex-shrink-0 ">
+                    <a href="/" class="font-bold text-medium pl-8 pr-4  py-4 flex items-center"><span>ABC
+                            Bank</span></a>
+                    <a href=""
+                        class="nh__link flex flex-col items-center justify-center font-medium text-gray relative">
+                        <span class="tran mt-1">About Us</span>
+                        <div class="bg-red tran  nhl__bar w-full absolute bottom-0"></div>
+                    </a>
+                    <a href=""
+                        class="nh__link flex flex-col items-center justify-center font-medium text-gray relative">
+                        <span class="tran mt-1">Careers</span>
+                        <div class="bg-red tran nhl__bar w-full absolute bottom-0"></div>
+                    </a>
+                    <a href=""
+                        class="nh__link flex flex-col items-center justify-center font-medium text-gray relative">
+                        <span class="tran mt-1">Sustainability</span>
+                        <div class="bg-red tran nhl__bar w-full absolute bottom-0"></div>
+                    </a>
+                    <a href=""
+                        class="nh__link flex flex-col items-center justify-center font-medium text-gray relative">
+                        <span class="tran mt-1">Media</span>
+                        <div class="bg-red tran nhl__bar w-full absolute bottom-0"></div>
+                    </a>
+                </nav>
+                <nav class="flex flex-shrink-0 pl-8">
+                    <div class="flex space-x-4 items-center">
+                        <a href=""
+                            class="lang_link w-8 h-8 border border-opacity-40 border-black rounded-full flex items-center justify-center text-black  text-opacity-60 hover:bg-red  hover:text-white">
+                            <span>E</span>
+                        </a>
+                        <a href=""
+                            class="lang_link w-8 h-8 border border-opacity-40 border-black rounded-full flex items-center justify-center text-black  text-opacity-60 hover:bg-red  hover:text-white">
+                            <span>සි</span>
+                        </a>
+                        <a href=""
+                            class="lang_link w-8 h-8 border border-opacity-40 border-black rounded-full flex items-center justify-center text-black  text-opacity-60 hover:bg-red  hover:text-white">
+                            <span>த</span>
+                        </a>
+                        <button id="tn__search__button" class="px-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="fill-current text-black text-opacity-40 w-8 h-8 tran hover:text-black">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex ml-4">
+                        <a href=""
+                            class="px-4 py-2 text-small bg-gray tran hover:bg-opacity-80 text-white flex flex-col justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="fill-current text-white w-6 h-6 ">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            <span>Locate Us</span>
+                        </a>
+                        <a href=""
+                            class="px-4 py-2 text-small bg-gray tran hover:bg-opacity-80 text-white flex flex-col justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="fill-current text-white w-6 h-6 ">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" />
+                            </svg>
+                            <span>Contact Us</span>
+                        </a>
+                        <button id="login__button"
+                            class="bg-red text-white flex items-center relative p-4 space-x-1 justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="fill-current text-white w-6 h-6 ">
+                                <g fill="none">
+                                    <path d="M0 0h24v24H0V0z" />
+                                    <path d="M0 0h24v24H0V0z" opacity=".87" />
+                                </g>
+                                <path
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                            </svg>
+                            <span class="text-small">Login</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="fill-current text-white w-6 h-6 ">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M7 10l5 5 5-5H7z" />
+                            </svg>
+                            <div id="login__links__wrapper"
+                                class=" absolute w-72 best-shadow bg-white right-2 top-full font-medium rounded-lg space-y-4 mt-2 z-50 p-4 flex flex-col items-start">
+                                <a href="" class="text-gray hover:text-black ">
+                                    <span>
+                                        Login Link 1
+                                    </span>
+                                </a>
+                                <a href="" class="text-gray hover:text-black ">
+                                    <span>
+                                        Login Link 2
+                                    </span>
+                                </a>
+                                <a href="" class="text-gray hover:text-black ">
+                                    <span>
+                                        Login Link 3
+                                    </span>
+                                </a>
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex justify-between w-full bg-black text-white overflow-x-auto">
+                <nav class="flex py-4 pl-4 flex-shrink-0">
+                    <a href="" class="px-4 py-2 tran hover:text-red">Personal</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+                    <a href="" class="px-4 py-2 tran hover:text-red">Cards</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+                    <a href="" class="px-4 py-2 tran hover:text-red">DFCC Pinnacle</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+
+                    <a href="" class="px-4 py-2 tran hover:text-red">Digital Banking</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+                    <a href="" class="px-4 py-2 tran hover:text-red">Corporate</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+                    <a href="" class="px-4 py-2 tran hover:text-red">SME</a>
+                    <div class="h-full w-px bg-white bg-opacity-40"></div>
+                    <a href="" class="px-4 py-2 tran hover:text-red">International</a>
+                </nav>
+                <nav class="flex flex-shrink-0 space-x-4 items-center px-8">
+                    <button class="hover:scale-105 tran transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="fill-current text-red w-8 h-8 ">
+                            <path
+                                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" />
+                        </svg>
+                    </button>
+                    <div class="flex">
+                        <button class="w-2 color__button h-5 bg-red1 hover:scale-125 z-40 transform tran"></button>
+                        <button class="w-2 color__button h-5 bg-red2 hover:scale-125 z-20 transform tran"></button>
+                        <button class="w-2 color__button h-5 bg-red3 hover:scale-125 z-10 transform tran"></button>
+                    </div>
+                    <div class="flex space-x-1 items-center">
+                        <button class="font__button hover:opacity-60 tran ">
+                            <svg class="w-4 h-4" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.83917 13.1455H5.89693L5.08094 15H3.9894L7.34878 7.58182H8.39792L11.7679 15H10.6552L9.83917 13.1455ZM9.46826 12.2977L7.86805 8.66275L6.26784 12.2977H9.46826Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </button>
+                        <button class="font__button hover:opacity-60 tran">
+                            <svg class="w-4 h-4" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7588 12.2182H4.8454L3.6214 15H1.9841L7.02317 3.87273H8.59688L13.6518 15H11.9828L10.7588 12.2182ZM10.2024 10.9465L7.80208 5.49413L5.40177 10.9465H10.2024Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </button>
+                        <button class="font__button hover:opacity-60 tran">
+                            <svg class="w-4 h-4 ml-1 " viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9484 11.5227H4.55675L3.02675 15H0.98013L7.27896 1.09091H9.2461L15.5648 15H13.4784L11.9484 11.5227ZM11.253 9.93312L8.2526 3.11766L5.25221 9.93312H11.253Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero" class=" w-full bg-red h-48vw lg:h-32vw 2xl:h-600px p-8 flex items-center">
+            <div class="w-full max-w-7xl mx-auto relative -top-4 text-white ">
+                <h2 class="flex flex-col w-full max-w-xl text-large">
+                    <p>I want to</p>
+                    <p class="font-medium">know about</p>
+                </h2>
+                <button id="choose__topic" class="mt-8 w-full max-w-xs relative">
+                    <div class="w-full flex items-center bg-white best-shadow rounded-lg text-left">
+                        <div class="px-4 py-3 w-full">
+                            <span class="text-normal text-gray font-medium">Choose a topic</span>
+                        </div>
+                        <div class="px-4 py-3 flex flex-col h-full space-y-1 border-l border-black border-opacity-40">
+                            <div class="w-7 h-1 bg-red"></div>
+                            <div class="w-7 h-1 bg-red"></div>
+                            <div class="w-7 h-1 bg-red"></div>
+                        </div>
+                    </div>
+                    <div id="choose__topics__wrapper"
+                        class=" w-full max-h-64 items-start font-medium overflow-auto space-y-4 absolute bg-white text-black best-shadow rounded-lg top-full left-0 mt-2 p-4 flex flex-col">
+                        <a href="" class=" ">
+                            <span>Test Topic 1</span>
+                        </a>
+                        <a href="" class=" ">
+                            <span>Test Topic 2</span>
+                        </a>
+                        <a href="" class=" ">
+                            <span>Test Topic 3</span>
+                        </a>
+                        <a href="" class=" ">
+                            <span>Test Topic 4</span>
+                        </a>
+                        <a href="" class=" ">
+                            <span>Test Topic 5</span>
+                        </a>
+
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section id="pros" class="w-full relative flex items-center mx-auto">
+            <div class="carousel1 overflow-hidden ">
+                <div class="flex py-12">
+                    <div
+                        class="relative flex-100  px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g fill="none">
+                                <path d="M0 0h24v24H0V0z" />
+                                <path d="M0 0h24v24H0V0z" opacity=".87" />
+                            </g>
+                            <path
+                                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                        </svg>
+                        <span class="mt-4 font-medium">online<br /> banking</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                            <circle cx="12" cy="9" r="2.5" />
+                        </svg>
+                        <span class="mt-4 font-medium">locate<br /> us</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z" />
+                        </svg>
+                        <span class="mt-4 font-medium">become<br /> a customer</span>
+                    </div>
+                    <div
+                        class="relative   flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M22 19h-6v-4h-2.68c-1.14 2.42-3.6 4-6.32 4-3.86 0-7-3.14-7-7s3.14-7 7-7c2.72 0 5.17 1.58 6.32 4H24v6h-2v4zm-4-2h2v-4h2v-2H11.94l-.23-.67C11.01 8.34 9.11 7 7 7c-2.76 0-5 2.24-5 5s2.24 5 5 5c2.11 0 4.01-1.34 4.71-3.33l.23-.67H18v4zM7 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z" />
+                        </svg>
+                        <span class="mt-4 font-medium">accounts</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g>
+                                <path d="M0,0h24v24H0V0z" fill="none" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M20,4H4C2.89,4,2.01,4.89,2.01,6L2,18c0,1.11,0.89,2,2,2h5v-2H4v-6h18V6C22,4.89,21.11,4,20,4z M20,8H4V6h16V8z M14.93,19.17l-2.83-2.83l-1.41,1.41L14.93,22L22,14.93l-1.41-1.41L14.93,19.17z" />
+                            </g>
+                        </svg>
+                        <span class="mt-4 font-medium">loans & <br /> advances</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z" />
+                        </svg>
+                        <span class="mt-4 font-medium">complaince</span>
+                    </div>
+                    <div
+                        class="relative flex-100  px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g fill="none">
+                                <path d="M0 0h24v24H0V0z" />
+                                <path d="M0 0h24v24H0V0z" opacity=".87" />
+                            </g>
+                            <path
+                                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                        </svg>
+                        <span class="mt-4 font-medium">online<br /> banking</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                            <circle cx="12" cy="9" r="2.5" />
+                        </svg>
+                        <span class="mt-4 font-medium">locate<br /> us</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z" />
+                        </svg>
+                        <span class="mt-4 font-medium">become<br /> a customer</span>
+                    </div>
+                    <div
+                        class="relative   flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M22 19h-6v-4h-2.68c-1.14 2.42-3.6 4-6.32 4-3.86 0-7-3.14-7-7s3.14-7 7-7c2.72 0 5.17 1.58 6.32 4H24v6h-2v4zm-4-2h2v-4h2v-2H11.94l-.23-.67C11.01 8.34 9.11 7 7 7c-2.76 0-5 2.24-5 5s2.24 5 5 5c2.11 0 4.01-1.34 4.71-3.33l.23-.67H18v4zM7 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z" />
+                        </svg>
+                        <span class="mt-4 font-medium">accounts</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g>
+                                <path d="M0,0h24v24H0V0z" fill="none" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M20,4H4C2.89,4,2.01,4.89,2.01,6L2,18c0,1.11,0.89,2,2,2h5v-2H4v-6h18V6C22,4.89,21.11,4,20,4z M20,8H4V6h16V8z M14.93,19.17l-2.83-2.83l-1.41,1.41L14.93,22L22,14.93l-1.41-1.41L14.93,19.17z" />
+                            </g>
+                        </svg>
+                        <span class="mt-4 font-medium">loans & <br /> advances</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z" />
+                        </svg>
+                        <span class="mt-4 font-medium">complaince</span>
+                    </div>
+                    <div
+                        class="relative flex-100  px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g fill="none">
+                                <path d="M0 0h24v24H0V0z" />
+                                <path d="M0 0h24v24H0V0z" opacity=".87" />
+                            </g>
+                            <path
+                                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                        </svg>
+                        <span class="mt-4 font-medium">online<br /> banking</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                            <circle cx="12" cy="9" r="2.5" />
+                        </svg>
+                        <span class="mt-4 font-medium">locate<br /> us</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z" />
+                        </svg>
+                        <span class="mt-4 font-medium">become<br /> a customer</span>
+                    </div>
+                    <div
+                        class="relative   flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M22 19h-6v-4h-2.68c-1.14 2.42-3.6 4-6.32 4-3.86 0-7-3.14-7-7s3.14-7 7-7c2.72 0 5.17 1.58 6.32 4H24v6h-2v4zm-4-2h2v-4h2v-2H11.94l-.23-.67C11.01 8.34 9.11 7 7 7c-2.76 0-5 2.24-5 5s2.24 5 5 5c2.11 0 4.01-1.34 4.71-3.33l.23-.67H18v4zM7 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm0-4c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z" />
+                        </svg>
+                        <span class="mt-4 font-medium">accounts</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <g>
+                                <path d="M0,0h24v24H0V0z" fill="none" />
+                            </g>
+                            <g>
+                                <path
+                                    d="M20,4H4C2.89,4,2.01,4.89,2.01,6L2,18c0,1.11,0.89,2,2,2h5v-2H4v-6h18V6C22,4.89,21.11,4,20,4z M20,8H4V6h16V8z M14.93,19.17l-2.83-2.83l-1.41,1.41L14.93,22L22,14.93l-1.41-1.41L14.93,19.17z" />
+                            </g>
+                        </svg>
+                        <span class="mt-4 font-medium">loans & <br /> advances</span>
+                    </div>
+                    <div
+                        class="relative  flex-100 px-8 w-full max-w-xs text-normal flex flex-col items-center text-center text-gray uppercase">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            class="w-12 h-12 fill-current text-red">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z" />
+                        </svg>
+                        <span class="mt-4 font-medium">complaince</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <button id="c1__left" class="absolute  left-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8 fill-current text-red">
+                    <path d="M0 0h24v24H0V0z" fill="none" opacity=".87" />
+                    <path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+                </svg>
+            </button>
+            <button id="c1__right" class="absolute  right-8">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                    class="w-8 h-8 fill-current text-red" viewBox="0 0 24 24" fill="#000000">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none" />
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12" />
+                    </g>
+                </svg>
+            </button>
+        </section>
+        <section id="video" class="px-8 py-16 bg-l-gray">
+            <div class="w-full max-w-7xl mx-auto flex relative justify-end items-center">
+                <div class="w-2/3 bg-white rounded-xl text-black p-8 best-shadow absolute left-0 z-10">
+                    <h2 class="text-medium font-medium">
+                        Lorem Ispum Title
+                    </h2>
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa earum veritatis quasi
+                        consequuntur quo ducimus hic porro accusantium modi iure doloremque adipisci, architecto
+                        perspiciatis fugit, molestiae quod voluptas dolores.
+                    </p>
+                </div>
+                <div class="w-1/2 h-full flex-shrink-0 relative flex items-center justify-center">
+                    <video id="v1" src="/videos/video.mp4"
+                        class="w-full best-shadow h-full object-cover relative z-0"></video>
+                    <button id="v1__pp"
+                        class="absolute flex items-center justify-center w-24 h-24 border-4 rounded-full border-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 fill-current text-white"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="p-8 py-16">
+            <div class="w-full max-w-7xl mx-auto flex flex-col">
+                <h2 class="text-large text-center uppercase font-bold">
+                    our services and solutions
+                </h2>
+                <div class="mt-16 max-w-2xl xl:max-w-full mx-auto grid grid-cols-1 xl:grid-cols-3 gap-x-12 gap-y-8">
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                    <div class="flex  flex-col space-y-4 items-center text-center">
+                        <div class="w-full h-64 services__image overflow-hidden">
+
+                            <img src="/images/s1.jpg" alt="" class="w-full h-full object-cover ">
+                        </div>
+                        <span class="font-semibold transform scale-125 ">
+                            Lorem ipsum is a cool dummy
+                        </span>
+                        <button class="bg-red text-white px-8 best-shadow tran hover:scale-95 transform py-3">
+                            <span>Dummy Text</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" py-16 px-8   ">
+            <div class="w-full max-w-7xl mx-auto flex flex-col items-center">
+                <h2 class="text-large text-center uppercase font-bold">
+                    main branches
+                </h2>
+                <div class="grid xl:grid-cols-2 grid-cols-1 gap-8 w-full mt-16">
+                    <img src="/images/sri-lanka-map.gif" alt="" class="w-full max-w-2xl mx-auto h-full object-cover">
+                    <div class="flex flex-col space-y-4 max-w-2xl w-full mx-auto">
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Head Office
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                        <div class="w-full h-px bg-black bg-opacity-20"></div>
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Corporate Office
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                        <div class="w-full h-px bg-black bg-opacity-20"></div>
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Kandy Main Branch
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                        <div class="w-full h-px bg-black bg-opacity-20"></div>
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Kurunegala Premier
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                        <div class="w-full h-px bg-black bg-opacity-20"></div>
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Galle
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                        <div class="w-full h-px bg-black bg-opacity-20"></div>
+                        <div class="flex flex-col space-y-2 py-4">
+                            <div class="flex items-center space-x-8 flex-wrap justify-between">
+                                <h3 class="font-semibold text-medium">
+                                    Jaffna Premier
+                                </h3>
+                                <a href=""><span class="font-medium hover:underline">+94 76 234 434 3</span></a>
+                            </div>
+                            <p class="font-medium max-w-sm w-full text-gray">No.275/75, Pro.Stanley Wijesundara Mawatha,
+                                Colombo 7.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-8 py-16 bg-l-gray">
+            <div class="max-w-7xl mx-auto flex flex-col items-center">
+                <h2 class="text-large font-bold text-center uppercase">
+                    Annoucements
+                </h2>
+                <div class="max-w-2xl xl:max-w-full mx-auto grid xl:grid-cols-2 gap-12 grid-cols-1 w-full mt-16">
+                    <div class="flex w-full h-64 services__image best-shadow">
+                        <div class="w-7/12 h-full  overflow-hidden">
+                            <img src="/images/s2.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-5/12 bg-white p-4 flex flex-col justify-end space-y-4">
+                            <div class="text-medium font-semibold">
+                                Lorem is a cool dummy
+                            </div>
+                            <a href="" class="text-red font-medium hover:underline">Read More</a>
+                        </div>
+                    </div>
+                    <div class="flex w-full h-64 services__image best-shadow">
+                        <div class="w-7/12 h-full  overflow-hidden">
+                            <img src="/images/s2.jpg" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-5/12 bg-white p-4 flex flex-col justify-end space-y-4">
+                            <div class="text-medium font-semibold">
+                                Lorem is a cool dummy
+                            </div>
+                            <a href="" class="text-red font-medium hover:underline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="py-8  relative flex  flex-col justify-center w-full relative flex items-center mx-auto">
+            <div class="carousel2 w-full  mx-auto overflow-hidden">
+                <div class="flex">
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-100 w-full max-w-sm flex items-center space-x-4">
+                        <div class="flex flex-col space-y-2 items-center py-2">
+                            <div class="w-16 h-10 bg-red">
+                                <img src="/images/usd.png" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <span class="font-bold uppercase text-medium">
+                                usd
+                            </span>
+                        </div>
+                        <div class="h-full w-px bg-black bg-opacity-20 "></div>
+                        <div class="flex flex-col space-y-2 font-medium text-gray">
+                            <span>Buy 200</span>
+                            <span>Sell 200</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <button id="c2__left" class="absolute -mt-16 left-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8 fill-current text-black">
+                    <path d="M0 0h24v24H0V0z" fill="none" opacity=".87" />
+                    <path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+                </svg>
+            </button>
+            <button id="c2__right" class="absolute -mt-16 right-8">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                    class="w-8 h-8 fill-current text-black" viewBox="0 0 24 24" fill="#000000">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none" />
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12" />
+                    </g>
+                </svg>
+            </button>
+            <div class="flex px-8 max-w-7xl mx-auto w-full mt-8 justify-end font-medium space-x-8">
+                <p class="text-gray">
+                    *Valid for use on 11<sup>th</sup> November ,2021
+                </p>
+                <a href="" class="text-red underline">Read All Rates</a>
+            </div>
+        </section>
+
+        <footer class="w-full overflow-auto bg-black bg-opacity-80 text-white   ">
+            <div class="px-8">
+                <div class="w-full py-16 max-w-7xl mx-auto flex space-x-8 justify-between">
+                    <div class="flex flex-col space-y-2 w-max max-w-sm flex-shrink-0">
+                        <h3 class="uppercase ">
+                            Quick Links
+                        </h3>
+                        <a href="" class="flex items-center  hover:text-white tran capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-auto -ml-2 h-8 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-8 h-8 -ml-2 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-8 h-8 -ml-2 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-8 h-8 -ml-2 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-8 h-8 -ml-2 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                class="w-8 h-8 -ml-2 fill-current">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M10 17l5-5-5-5v10z" />
+                            </svg>
+                            <span>Application Downloads</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-col space-y-4 w-max max-w-sm flex-shrink-0">
+                        <h3 class="uppercase ">
+                            Mobile Banking App
+                        </h3>
+                        <a href="" class="w-48  h-auto">
+                            <img src="/images/get-it-on-google-play-vector.png" alt="" class="w-full h-auto">
+                        </a>
+                        <a href="" class="w-48  h-auto">
+                            <img src="/images/get-it-on-google-play-vector.png" alt="" class="w-full h-auto">
+                        </a>
+                        <p class="text-gray w-full">Our online banking app is not hosted in any third party stores
+                            except for
+                            the above</p>
+                        <div class="flex flex-col space-y-1">
+                            <h3 class="uppercase pt-4">
+                                Swift Code
+                            </h3>
+                            <p class="text-gray w-full uppercase">xxzsdqv</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col space-y-4 w-max max-w-sm flex-shrink-0">
+                        <h3 class="uppercase ">
+                            Follow Us
+                        </h3>
+
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray space-x-4">
+                            <div class="rounded-full flex-shrink-0 bg-fb w-8 h-8 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 h-5 text-white"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                                        fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray space-x-4">
+                            <div class="rounded-full flex-shrink-0 w-8 h-8 bg-insta flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 h-5 text-white"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                                    <path
+                                        d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                                </svg>
+                            </div>
+                            <span class="">Instagram</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray space-x-4">
+                            <div class="rounded-full flex-shrink-0 w-8 h-8 bg-twitter flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 h-5 text-white"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+                                </svg>
+                            </div>
+                            <span class="">Twitter</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray space-x-4">
+                            <div
+                                class="rounded-full flex-shrink-0 w-8 h-8 bg-linkedin flex items-center  justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 h-5 text-white"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+                                </svg>
+                            </div>
+                            <span>Linkedin</span>
+                        </a>
+                        <a href="" class="flex items-center hover:text-white  capitalize text-gray space-x-4">
+                            <div class="rounded-full flex-shrink-0 bg-youtube flex items-center justify-center w-8 h-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white w-5 h-5"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z" />
+                                </svg>
+                            </div>
+                            <span>Youtube</span>
+                        </a>
+
+                    </div>
+                    <div class="flex flex-col space-y-4 w-max max-w-sm flex-shrink-0">
+                        <div class="flex flex-col space-y-2">
+                            <h3 class="uppercase ">
+                                Reach Us
+                            </h3>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-8 h-8 -ml-2 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M10 17l5-5-5-5v10z" />
+                                </svg>
+                                <span>Contact Us</span>
+                            </a>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-8 h-8 -ml-2 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M10 17l5-5-5-5v10z" />
+                                </svg>
+                                <span>Branch Network</span>
+                            </a>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-8 h-8 -ml-2 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M10 17l5-5-5-5v10z" />
+                                </svg>
+                                <span>Self Banking Centre Network</span>
+                            </a>
+                        </div>
+                        <div class="flex flex-col space-y-4 py-8">
+                            <h3 class="uppercase ">
+                                Coporate Office
+                            </h3>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-6 h-6 mr-1 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" />
+                                    <circle cx="12" cy="9" r="2.5" />
+                                </svg>
+                                <span>486, Galle Road, Colombo 3.</span>
+                            </a>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-6 h-6 mr-1 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" />
+                                </svg>
+                                <span>+94 123 232 222</span>
+                            </a>
+                            <a href="" class="flex items-center hover:text-white  capitalize text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="w-6 h-6 mr-1 fill-current">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" />
+                                </svg>
+                                <span>+94 123 232 222</span>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-full  text-gray text-center py-6 px-8 border-t border-gray border-opacity-40">
+                Copyright &copy; 2021 XXXXX Bank PLC is a Licensed XXXXXXXX Bank Approved and supervised by the Central
+                Bank Of
+                Sri Lanka.
+            </div>
+        </footer>
+
+
+        <div id="sidebar" class="fixed flex flex-col items-end right-0">
+            <nav class="flex flex-col space-y-2">
+                <a href=""
+                    class=" social__link  hover:bg-opacity-100 bg-opacity-70  backdrop-filter backdrop-blur-2xl  relative p-2 bg-white flex items-center rounded-l-full justify-between">
+                    <div class="rounded-full flex-shrink-0 bg-fb flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" viewBox="0 0 512 512">
+                            <path
+                                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                                fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span class="truncate ml-4 text-black text-normal font-medium">Facebook</span>
+                </a>
+                <a href=""
+                    class=" social__link  hover:bg-opacity-100 bg-opacity-70  backdrop-filter backdrop-blur-2xl  relative p-2 bg-white flex items-center rounded-l-full justify-between">
+                    <div class="rounded-full flex-shrink-0 bg-twitter flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" viewBox="0 0 512 512">
+                            <path
+                                d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+                        </svg>
+                    </div>
+                    <span class="truncate ml-4 text-black text-normal font-medium">Twitter</span>
+                </a>
+                <a href=""
+                    class=" social__link  hover:bg-opacity-100 bg-opacity-70  backdrop-filter backdrop-blur-2xl  relative p-2 bg-white flex items-center rounded-l-full justify-between">
+                    <div class="rounded-full flex-shrink-0 bg-linkedin flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" viewBox="0 0 512 512">
+                            <path
+                                d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+                        </svg>
+                    </div>
+                    <span class="truncate ml-4 text-black text-normal font-medium">Linkedin</span>
+                </a>
+                <a href=""
+                    class=" social__link  hover:bg-opacity-100 bg-opacity-70  backdrop-filter backdrop-blur-2xl  relative p-2 bg-white flex items-center rounded-l-full justify-between">
+                    <div class="rounded-full flex-shrink-0 bg-youtube flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" viewBox="0 0 512 512">
+                            <path
+                                d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z" />
+                        </svg>
+                    </div>
+                    <span class="truncate ml-4 text-black text-normal font-medium">Youtube</span>
+                </a>
+                <a href=""
+                    class=" social__link  hover:bg-opacity-100 bg-opacity-70  backdrop-filter backdrop-blur-2xl  relative p-2 bg-white flex items-center rounded-l-full justify-between">
+                    <div class="rounded-full flex-shrink-0 bg-insta flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" viewBox="0 0 512 512">
+                            <path
+                                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                            <path
+                                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                        </svg>
+                    </div>
+                    <span class="truncate ml-4 text-black text-normal font-medium">Instagram</span>
+                </a>
+            </nav>
+            <div class="mt-4 w-max">
+                <button id="chat__now__button"
+                    class=" items-center text-white flex flex-col right-0 px-1 py-3 rounded-l-lg  ">
+                    <span class="text-small ">Chat Now</span>
+                    <img src="/images/chatbtn.png" alt="Chat ME" class="mt-2 w-7 h-7">
+                </button>
+            </div>
+
+        </div>
+
+        <div id="chat__now"
+            class="w-full max-w-sm overflow-hidden max-h-96  flex flex-col bg-white  rounded-xl fixed  bottom-4 right-4">
+            <div class="w-full bg-black p-4 flex items-center text-white justify-between space-x-8">
+                <span class="font-bold text-normal">ABC Bank</span>
+                <button id="cn__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="fill-current text-white  w-8 h-8 hover:text-red tran">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                    </svg>
+                </button>
+            </div>
+            <div
+                class="w-full h-full overflow-y-auto p-4 flex flex-col justify-center items-center text-center my-auto">
+                <h2 class="font-bold text-medium">Let's Chat Now</h2>
+                <p class="text-normal">
+                    Once upon a time...
+                </p>
+            </div>
+        </div>
+        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+        <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+        <script src="/scripts/main.js"></script>
+    </div>
+</body>
+
+</html>
